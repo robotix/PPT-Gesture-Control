@@ -41,7 +41,7 @@ $> pyinstaller --onefile --windowed <i>filename</i>.py
 > [Pynput](https://pypi.org/project/pynput/)<br>
 > [Tkinter](https://docs.python.org/3/library/tkinter.html)
 
-### 🛂Contribution Guidelines
+#### 🛂Contribution Guidelines
 1. Standard linting and formatting practices to be followed
 2. Implement good object oriented programming
 
