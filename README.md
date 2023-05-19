@@ -31,7 +31,7 @@ Linux
 
 #### 📦Final Packaging
 ```
-$> pip freeze > requirements.txt <br>
+$> pip freeze > requirements.txt
 $> pyinstaller --onefile --windowed <i>filename</i>.py
 ```
 
