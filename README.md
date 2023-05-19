@@ -42,6 +42,18 @@ pyinstaller --onefile --windowed <i>filename</i>.py
 1. Standard linting and formatting practices to be followed
 2. Implement good object oriented programming
 
+```
+File Structure
+~/ ----> ppt-control/
+          |----> ppt_control_env/
+          |        |----> ...  
+          |
+          |----> Script/
+                   |----> __init__.py
+                   |----> function_module.py
+                   |----> main.py
+```
+
 #### 🎶Notes
 * Some initial unstructured, not so well designed files have been dumped into the repository which work (They are of TRS itself and not from internet). They are for shear understanding of the general implementation logic and not a development model for us. Refrain from following similar structuring.  
 * Communicate any concerns and enhancements with the maintainers.
