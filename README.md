@@ -30,7 +30,10 @@ Linux
 ```
 
 #### 📦Final Packaging
-pyinstaller --onefile --windowed <i>filename</i>.py
+```
+$> pip freeze > requirements.txt <br>
+$> pyinstaller --onefile --windowed <i>filename</i>.py
+```
 
 #### 📚Resources
 > [MediaPipe Solutions](https://developers.google.com/mediapipe/solutions/guide)<br>
