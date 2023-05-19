@@ -15,7 +15,7 @@
 ```
 Windows
 1. python -m venv ppt_control_env
-2. ./ppt_control_env/bin/activate
+2. ./ppt_control_env/Scripts/activate
 3. pip install -r requirements.txt
 4. python run.py
 5. deactivate
@@ -23,7 +23,7 @@ Windows
 ```
 Linux
 1. python3 -m venv ppt_control_env
-2. source ppt_control_env/bin/activate
+2. source ppt_control_env/Scripts/activate
 3. pip install -r requirements.txt
 4. python3 run.py
 5. deactivate
