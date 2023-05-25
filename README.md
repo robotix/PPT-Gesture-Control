@@ -5,8 +5,8 @@
 * Code it (MediaPipe Solution by Google)
   * Gesture to key mapping for: up, down, right, left, enter...
   * Volume control 
-* Setup a stream to the code through Google meet window
-  * On the stage, a smartphone camera would stream on a google meet. The host PC would be participant of the meet and would get the stream data thereby.
+* Setup a stream to the code through IP Webcam
+  * On the stage, a smartphone camera would stream on IP Webcam. The host PC would be on same network and would get the stream data thereby.
 * Test and optimize sensitivity and feasibility on stage.
   * We need the API to be low latency and to suppress false moves.
 * Integrate simple tkinter gui 
@@ -15,7 +15,7 @@
 ```
 Windows
 1. python -m venv ppt_control_env
-2. ./ppt_control_env/Scripts/activate
+2. ppt_control_env/Scripts/activate
 3. pip install -r requirements.txt
 4. python run.py
 5. deactivate
@@ -23,7 +23,7 @@ Windows
 ```
 Linux
 1. python3 -m venv ppt_control_env
-2. source ppt_control_env/Scripts/activate
+2. source ppt_control_env/bin/activate
 3. pip install -r requirements.txt
 4. python3 run.py
 5. deactivate
