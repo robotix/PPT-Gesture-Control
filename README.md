@@ -47,7 +47,7 @@ $> pyinstaller --onefile --windowed <i>filename</i>.py
 ```
 File Structure
 ~/ ----> ppt-control/
-          |----> ppt_control_env/
+          |----> venv/
           |        |----> ...  
           |
           |----> Script/
