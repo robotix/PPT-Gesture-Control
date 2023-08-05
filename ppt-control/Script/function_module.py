@@ -133,16 +133,16 @@ class PoseGestureRecognizer():
 
             if self.lmListPrev and self.lmListCurr:
                 if (self.lmListPrev[15]).x > (self.lmListPrev[9]).x and (self.lmListCurr[15]).x < (self.lmListCurr[9]).x:
-                    if self.get_ratio_shoulder_height(imgCurr) > self.crossThreshold/1.41:
-                        if (self.lmListPrev[15]).y < (self.lmListPrev[11]).y + self.get_shoulder_to_ear(imgCurr) and ((self.lmListCurr[15]).y > (self.lmListCurr[7]).y - self.get_shoulder_to_ear(imgCurr)/1.41):
-                            pyautogui.press('right')
-                            time.sleep(0.5)
+                    # if self.get_ratio_shoulder_height(imgCurr) > self.crossThreshold/1.41:
+                    #     if (self.lmListPrev[15]).y < (self.lmListPrev[11]).y + self.get_shoulder_to_ear(imgCurr) and ((self.lmListCurr[15]).y > (self.lmListCurr[7]).y - self.get_shoulder_to_ear(imgCurr)/1.41):
+                    pyautogui.press('right')
+                    time.sleep(0.5)
 
                 elif (self.lmListPrev[16]).x < (self.lmListPrev[10]).x and (self.lmListCurr[16]).x > (self.lmListCurr[10]).x:
-                    if self.get_ratio_shoulder_height(imgCurr) > self.crossThreshold/1.41:
-                        if (self.lmListPrev[16]).y < (self.lmListPrev[12]).y + self.get_shoulder_to_ear(imgCurr) and ((self.lmListCurr[16]).y > (self.lmListCurr[8]).y - self.get_shoulder_to_ear(imgCurr)/1.41):
-                            pyautogui.press('left')
-                            time.sleep(0.5)
+                    # if self.get_ratio_shoulder_height(imgCurr) > self.crossThreshold/1.41:
+                    #     if (self.lmListPrev[16]).y < (self.lmListPrev[12]).y + self.get_shoulder_to_ear(imgCurr) and ((self.lmListCurr[16]).y > (self.lmListCurr[8]).y - self.get_shoulder_to_ear(imgCurr)/1.41):
+                    pyautogui.press('left')
+                    time.sleep(0.5)
 
         except:
             pass
