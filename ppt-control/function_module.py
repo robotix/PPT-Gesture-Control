@@ -31,10 +31,6 @@ class HandGestureRecognizer():
                 cv2.circle(img, (cx, cy), 5, (255, 255, 0), cv2.FILLED)
         return img
 
-    def gestureControl(self)->str:
-        # add code here
-        return None
-
 class PoseGestureRecognizer():
     def __init__(self, model_complexity=1, smooth_landmarks=True, enable_segmentation=False, smooth_segmentation=True, min_detection_confidence=0.5, min_tracking_confidence=0.5):
         self.mpPose = mp.solutions.pose
