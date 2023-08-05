@@ -15,9 +15,9 @@
 ```
 Windows
 1. python -m venv ppt_control_env
-2. ppt_control_env/Scripts/activate
+2. ppt_control_env\Scripts\activate
 3. pip install -r requirements.txt
-4. python run.py
+4. python app.py
 5. deactivate
 ```
 ```
@@ -25,7 +25,7 @@ Linux
 1. python3 -m venv ppt_control_env
 2. source ppt_control_env/bin/activate
 3. pip install -r requirements.txt
-4. python3 run.py
+4. python3 app.py
 5. deactivate
 ```
 
@@ -38,7 +38,6 @@ $> pyinstaller --onefile --windowed <i>filename</i>.py
 #### 📚Resources
 > [MediaPipe Solutions](https://developers.google.com/mediapipe/solutions/guide)<br>
 > [PyAutoGui](https://pypi.org/project/PyAutoGUI/#:~:text=PyAutoGUI%20is%20a%20cross%2Dplatform,https%3A%2F%2Fpyautogui.readthedocs.org)<br>
-> [Pynput](https://pypi.org/project/pynput/)<br>
 > [Tkinter](https://docs.python.org/3/library/tkinter.html)
 
 #### 🛂Contribution Guidelines
@@ -54,7 +53,8 @@ File Structure
           |----> Script/
                    |----> __init__.py
                    |----> function_module.py
-                   |----> main.py
+                   |----> GUI.py
+                   |----> app.py
 ```
 
 #### 🎶Notes
