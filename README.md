@@ -1,15 +1,16 @@
 # 🙋🏻PPT Gesture Control
 
 #### 📑Tasks
-* Come up with some natural non-awkward hand movement to control the interface
+* Come up with some natural non-awkward hand movement to control the interface ✅
 * Code it (MediaPipe Solution by Google)
-  * Gesture to key mapping for: up, down, right, left, enter...
-  * Volume control 
-* Setup a stream to the code through IP Webcam
+  * Gesture to key mapping for: up, down, right, left, enter... ✅
+  * Volume control ✅
+* Setup a stream to the code through IP Webcam ✅
   * On the stage, a smartphone camera would stream on IP Webcam. The host PC would be on same network and would get the stream data thereby.
 * Test and optimize sensitivity and feasibility on stage.
   * We need the API to be low latency and to suppress false moves.
-* Integrate simple tkinter gui 
+* Integrate simple tkinter gui ✅
+* Multithreading for various actions to boost performance
 
 #### 🛠️Setup
 ```
@@ -38,7 +39,12 @@ $> pyinstaller --onefile --windowed <i>filename</i>.py
 #### 📚Resources
 > [MediaPipe Solutions](https://developers.google.com/mediapipe/solutions/guide)<br>
 > [PyAutoGui](https://pypi.org/project/PyAutoGUI/#:~:text=PyAutoGUI%20is%20a%20cross%2Dplatform,https%3A%2F%2Fpyautogui.readthedocs.org)<br>
-> [Tkinter](https://docs.python.org/3/library/tkinter.html)
+> [Tkinter](https://docs.python.org/3/library/tkinter.html)<br>
+> [Threading](https://docs.python.org/3/library/threading.html)
+
+#### 🧑🏻‍🎓Contributors
+* U Skanda Aithal<br>
+* Swaminathan S K
 
 #### 🛂Contribution Guidelines
 1. Standard linting and formatting practices to be followed
