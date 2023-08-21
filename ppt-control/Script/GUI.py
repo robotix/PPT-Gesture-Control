@@ -17,7 +17,7 @@ class GUI(tk.Frame):
         self.master = master
         # self.pack()
         # object of HandGestureRecognizer class
-        self.handRecognizer = fm.HandGestureRecognizer()
+        # self.handRecognizer = fm.HandGestureRecognizer()
         # object of PoseGestureRecognizer class
         self.poseRecognizer = fm.PoseGestureRecognizer()
         # initializes GUI widgets
@@ -26,7 +26,7 @@ class GUI(tk.Frame):
     def stream_window(self):
         # if url_inp is empty, use webcam
         if (self.url_inp.get() == ""):
-            cap = cv2.VideoCapture(0)
+            cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
         # else use the stream from IP Webcam
         else:
             cap = cv2.VideoCapture("http://"+self.url_inp.get()+"/video")
@@ -45,18 +45,21 @@ class GUI(tk.Frame):
                 # self.handRecognizer.gestureControl()
 
                 # initiate a thread for slide control
-                tslideControl = Thread(target=self.poseRecognizer.slideControl,
-                                       args=(framePrev, frame))
-                tslideControl.start()
+                # tslideControl = Thread(target=self.poseRecognizer.slideControl,
+                #                        args=(framePrev, frame))
+                # tslideControl.start()
 
                 # initiate a thread for volume control
-                tvolumeControl = Thread(target=self.poseRecognizer.volumeControl,
-                                        args=(framePrev, frame))
-                tvolumeControl.start()
+                # tvolumeControl = Thread(target=self.poseRecognizer.volumeControl,
+                #                         args=(framePrev, frame))
+                # tvolumeControl.start()
 
                 # join the threads
-                tslideControl.join()
-                tvolumeControl.join()
+                # tslideControl.join()
+                # tvolumeControl.join()
+                
+                # if (self.poseRecognizer.activate(frame)):
+                self.poseRecognizer.slideControl(framePrev, frame)
 
                 # display the frame
                 cv2.imshow('Frame', frame)
@@ -71,9 +74,9 @@ class GUI(tk.Frame):
         return None
 
     def initialize(self):
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
         frame = cv2.flip(cap.read()[1], 1)
-        self.handRecognizer.initialize(frame)
+        # self.handRecognizer.initialize(frame)
         self.poseRecognizer.initialize(frame)
         return None
 
