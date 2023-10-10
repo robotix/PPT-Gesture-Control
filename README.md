@@ -13,27 +13,27 @@
 * Multithreading for various actions to boost performance
 
 #### 🛠️Setup
-```
 Windows
-1. python -m venv ppt_control_env
-2. ppt_control_env\Scripts\activate
-3. pip install -r requirements.txt
-4. python app.py
-5. deactivate
-```
+```bash
+python -m venv ppt_control_env
+ppt_control_env\Scripts\activate
+pip install -r requirements.txt
+python app.py
+deactivate
 ```
 Linux
-1. python3 -m venv ppt_control_env
-2. source ppt_control_env/bin/activate
-3. pip install -r requirements.txt
-4. python3 app.py
-5. deactivate
+```bash
+python3 -m venv ppt_control_env
+source ppt_control_env/bin/activate
+pip install -r requirements.txt
+python3 app.py
+deactivate
 ```
 
 #### 📦Final Packaging
-```
-$> pip freeze > requirements.txt
-$> pyinstaller --onefile --windowed <i>filename</i>.py
+```bash
+pip freeze > requirements.txt
+pyinstaller --onefile --windowed <i>filename</i>.py
 ```
 
 #### 📚Resources
